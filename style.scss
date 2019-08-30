@@ -1,12 +1,22 @@
 // variables
 
-$grey-6: #cccccc;
-$border-radius: 4px;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+$font-family: 'Open Sans', sans-serif !default;
 $font-size: 1rem;
-$line-height-base: 1.5;
+$font-weight: 400;
+$font-bold: 600;
+$line-height: 1.5;
+$grey: #cccccc;
 $dark: #333333;
-$grey-0: #f6f6f6;
-$font-weight-semi-bold: 600;
+$light: #f6f6f6;
+$border-radius: 4px;
+
+// basic
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+}
 
 // reset
 
@@ -19,12 +29,12 @@ $font-weight-semi-bold: 600;
 // style
 
 .a-table {
-  border: 1px solid $grey-6;
+  border: 1px solid $grey;
   border-spacing: 0;
   border-radius: $border-radius;
   font-size: $font-size;
   font-weight: normal;
-  line-height: $line-height-base;
+  line-height: $line-height;
   color: $dark;
   width: 100%;
   margin-bottom: 24px;
@@ -39,26 +49,26 @@ $font-weight-semi-bold: 600;
   }
 
   &:not(:last-child) {
-    border-right: 1px solid $grey-6;
+    border-right: 1px solid $grey;
   }
 }
 
 .a-table tr:not(:first-child) .a-table__cell {
-  border-top: 1px solid $grey-6;
+  border-top: 1px solid $grey;
 }
 
 .a-table__head {
-  background-color: $grey-0;
-  font-weight: $font-weight-semi-bold;
+  background-color: $light;
+  font-weight: $font-bold;
 
   .a-table__cell {
     padding: 12px 16px;
-    border-bottom: 1px solid $grey-6;
+    border-bottom: 1px solid $grey;
   }
 }
 
 .a-table__foot {
   .a-table__cell {
-    border-top: 1px solid $grey-6;
+    border-top: 1px solid $grey;
   }
 }

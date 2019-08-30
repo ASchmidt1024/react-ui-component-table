@@ -14,15 +14,15 @@ class App extends Component<AppProps, AppState> {
     return (
       <TableFromModel
         model={{
-          head: [{ first: 'Einkommen', second: 'CHF' }],
+          head: [{ first: 'Head', second: '#1' }],
           body: [
             {
-              'this-is-the-cell-key': <p>Nettoeinkommen</p>,
-              'this-is-another-key': <p>3&apos;450</p>
+              'this-is-the-cell-key': <p>Curabitur gravida</p>,
+              'this-is-another-key': <p>arcu</p>
             },
             {
-              'this-is-the-cell-key': <p>Nebeneinkommen</p>,
-              'this-is-another-key': <p>234</p>
+              'this-is-the-cell-key': <p>Suspendisse potenti </p>,
+              'this-is-another-key': <p>nullam</p>
             },
             {
               'this-is-the-cell-key': (
@@ -31,10 +31,10 @@ class App extends Component<AppProps, AppState> {
                   dolore magna aliqua. Massa tempor nec feugiat nisl pretium.
                 </p>
               ),
-              'this-is-another-key': <p>234</p>
+              'this-is-another-key': <p>dolor</p>
             }
           ],
-          foot: [{ first: 'Footnote', second: '#1' }]
+          foot: [{ first: 'Foot', second: '#1' }]
         }}
       />
     );
